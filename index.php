@@ -17,6 +17,13 @@
     <i data-text="name">Оплатить</i>
     <i data-text="amount">500 USD</i>
     <i data-brand="visa"></i><i data-brand="mastercard"></i></a>
+
+<br>
+                    <div id="stats">
+                        <a href="seestats.php" data-button="" class="f-p-b" style="--fpb-background:#c2f3fc; --fpb-color:#000000; --fpb-border-color:#000000; --fpb-border-width:1px; --fpb-font-weight:400; --fpb-font-size:16px; --fpb-border-radius:5px;">Отзывы</a>
+                    </div>
+
+
 <?php
     }
     require_once("footer.php");

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Май 29 2020 г., 12:15
+-- Время создания: Май 30 2020 г., 12:45
 -- Версия сервера: 10.1.40-MariaDB
 -- Версия PHP: 7.3.5
 
@@ -21,6 +21,25 @@ SET time_zone = "+00:00";
 --
 -- База данных: `qwer`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `comments`
+--
+
+CREATE TABLE `comments` (
+  `name` text NOT NULL,
+  `comment` text NOT NULL,
+  `data` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Дамп данных таблицы `comments`
+--
+
+INSERT INTO `comments` (`name`, `comment`, `data`) VALUES
+('Nastya', 'jifnhv dihcuw;jd', 'Saturday 30th of May 2020 12:40:21 PM');
 
 -- --------------------------------------------------------
 

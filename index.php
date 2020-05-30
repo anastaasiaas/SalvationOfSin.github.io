@@ -20,7 +20,7 @@
 
 <br>
                     <div id="stats">
-                        <a href="seestats.php" data-button="" class="f-p-b" style="--fpb-background:#c2f3fc; --fpb-color:#000000; --fpb-border-color:#000000; --fpb-border-width:1px; --fpb-font-weight:400; --fpb-font-size:16px; --fpb-border-radius:5px;">Отзывы</a>
+                        <a href="forum.php" data-button="" class="f-p-b" style="--fpb-background:#c2f3fc; --fpb-color:#000000; --fpb-border-color:#000000; --fpb-border-width:1px; --fpb-font-weight:400; --fpb-font-size:16px; --fpb-border-radius:5px;">Отзывы</a>
                     </div>
 
 

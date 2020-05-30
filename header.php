@@ -48,7 +48,7 @@
     <body>
  
         <div id="header">
-            <h2>Salvation of Sin</h2>
+            <h2><a href="index.php">Salvation of Sin</a></h2>
             <div id="auth_block">
             <?php
                 if(!isset($_SESSION['email']) && !isset($_SESSION['password'])){

@@ -4,13 +4,11 @@
 
 <form name="comment" action="comment.php" method="post">
   <p>
-    <label>Комментарий:</label>
-    <br />
-    <textarea name="text_comment" cols="150" rows="10"></textarea>
+    <textarea name="text_comment" cols="130" rows="10"></textarea>
   </p>
   <p>
     <input type="hidden" name="page_id" value="150" />
-    <input type="submit" value="Отправить"/>
+    <button class="btn">Отправить</button>
   </p>
 </form>
 
@@ -27,7 +25,7 @@
 		<div class='post-item-wrap'>
 			<a href='' class='post-link'>
 				<h3 class='post-title'>$row[1], $row[3]</h3>
-				<p class='post-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel arcu purus. Duis egestas purus et ex interdum lobortis. Quisque nec magna viverra, interdum dolor at, congue augue. Quisque sed interdum augue, a lacinia nulla. Sed risus nibh, vestibulum eu nisi eu, imperdiet tempor quam.</p>
+				<p class='post-content'>$row[2]</p>
 			</a>			
 		</div>
 	</div>";

@@ -1,6 +1,8 @@
 <?php
   session_start();
+  if(isset($_SESSION['email'])){
   $name = $_SESSION['email'];
+  }else{$name = "Гость";}
   $text_comment = $_POST["text_comment"];
   $name = htmlspecialchars($name);
   $text_comment = htmlspecialchars($text_comment);

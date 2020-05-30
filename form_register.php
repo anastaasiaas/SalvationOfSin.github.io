@@ -17,48 +17,27 @@
 <?php
     if(!isset($_SESSION["email"]) && !isset($_SESSION["password"])){
 ?>
-        <div id="form_register">
-            <h2>Регистрация</h2>
- 
-            <form action="register.php" method="post" name="form_register">
-                <table>
-                    <tbody><tr>
-                        <td> Имя: </td>
-                        <td>
-                            <input type="text" name="first_name" required="required">
-                        </td>
-                    </tr>
- 
-                    <tr>
-                        <td> Фамилия: </td>
-                        <td>
-                            <input type="text" name="last_name" required="required">
-                        </td>
-                    </tr>
-              
-                    <tr>
-                        <td> Email: </td>
-                        <td>
-                            <input type="email" name="email" required="required"><br>
-                            <span id="valid_email_message" class="mesage_error"></span>
-                        </td>
-                    </tr>
-              
-                    <tr>
-                        <td> Пароль: </td>
-                        <td>
-                            <input type="password" name="password" placeholder="минимум 6 символов" required="required"><br>
-                            <span id="valid_password_message" class="mesage_error"></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <input type="submit" name="btn_submit_register" value="Зарегистрироватся">
-                        </td>
-                    </tr>
-                </tbody></table>
-            </form>
-        </div>
+
+<form action="register.php" method="post" name="form_register" class="ui-form">
+  <h3>Зарегистрироваться</h3>
+   <div class="form-row">
+    <input type="text" name="first_name" id="first_name" required autocomplete="off"><label for="email">Имя</label>
+  </div>
+  <div class="form-row">
+    <input type="text" name="last_name" id="last_name" required autocomplete="off"><label for="password">Фамилия</label>
+  </div>
+   <div class="form-row">
+    <input type="text" name="email" id="email" required autocomplete="off"><label for="email">Email</label>
+     <span id="valid_email_message" class="mesage_error"></span>
+  </div>
+  <div class="form-row">
+    <input type="password" name="password" id="password" required autocomplete="off"><label for="password">Пароль</label>
+     <span id="valid_password_message" class="mesage_error"></span>
+  </div>
+  <p><input type="submit" name="btn_submit_register" value="Зарегистрироваться"></p>
+</form>
+
+
 <?php
     }else{
 ?>

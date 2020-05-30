@@ -18,34 +18,20 @@
 <?php
     if(!isset($_SESSION["email"]) && !isset($_SESSION["password"])){
 ?>
-    <div id="form_auth">
-        <h2>Авторизация</h2>
-        <form action="auth.php" method="post" name="form_auth">
-            <table>     
-                <tbody><tr>
-                    <td> Email: </td>
-                    <td>
-                        <input type="email" name="email"><br>
-                        <span id="valid_email_message" class="mesage_error"></span>
-                    </td>
-                </tr>
-          
-                <tr>
-                    <td> Пароль: </td>
-                    <td>
-                        <input type="password" name="password" placeholder="минимум 6 символов"><br>
-                        <span id="valid_password_message" class="mesage_error"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input type="submit" name="btn_submit_auth" value="Войти">
-                    </td>
-                </tr>
-            </tbody></table>
-        </form>
-    </div>
- 
+
+<form action="auth.php" method="post" name="form_auth" class="ui-form">
+  <h3>Войти на сайт</h3>
+   <div class="form-row">
+    <input type="text" name="email" id="email" required autocomplete="off"><label for="email">Email</label>
+     <span id="valid_email_message" class="mesage_error"></span>
+  </div>
+  <div class="form-row">
+    <input type="password" name="password" id="password" required autocomplete="off"><label for="password">Пароль</label>
+     <span id="valid_password_message" class="mesage_error"></span>
+  </div>
+  <p><input type="submit" name="btn_submit_auth" value="Войти"></p>
+</form>
+
 <?php
     }else{
 ?>
